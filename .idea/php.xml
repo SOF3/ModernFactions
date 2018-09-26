@@ -6,8 +6,7 @@
       <path value="libs/libkinetic.phar" />
       <path value="libs/libasynql.phar" />
       <path value="libs/libglocal.phar" />
-      <path value="$PROJECT_DIR$/../../libs/spoondetector" />
-      <path value="$PROJECT_DIR$/../../libs/Marshal" />
+      <path value="libs/spoondetector.phar" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

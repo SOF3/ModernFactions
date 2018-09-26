@@ -1,9 +1,10 @@
 .idea/deployment.xml
 .idea/misc.xml
 .idea/workspace.xml
+.idea/dataSource*
 
 *.swp
 *.log
-pm*.sh
 
-tools/*.phar
+libs/*.phar
+pm*.sh

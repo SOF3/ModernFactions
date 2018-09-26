@@ -4,8 +4,6 @@ projects:
     libs:
       - src: Falkirks/spoondetector/spoondetector
         version: ^0.0.1
-      - src: Sandertv/Marshal/Marshal
-        version: ^1.0.0
       - src: poggit/libasynql/libasynql
         version: ^3.1.1
       - src: SOF3/libglocal/libglocal
