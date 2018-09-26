@@ -1,0 +1,5 @@
+name: ModernFactions
+api: 3.2.0
+version: 1.0.0
+main: SOFe\ModernFactions\Main
+author: SOFe
