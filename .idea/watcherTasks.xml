@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectTasksOptions">
+    <TaskOptions isEnabled="true">
+      <option name="arguments" value="../libs/libasynql.phar def src SOFe\ModernFactions\Generated\Queries --eol LF resources/db/mysql.sql resources/db/sqlite.sql" />
+      <option name="checkSyntaxErrors" value="true" />
+      <option name="description" />
+      <option name="exitCodeBehavior" value="ERROR" />
+      <option name="fileExtension" value="sql" />
+      <option name="immediateSync" value="true" />
+      <option name="name" value="libasynql def" />
+      <option name="output" value="$ProjectFileDir$/ModernFactions/src/SOFe/ModernFactions/Generated" />
+      <option name="outputFilters">
+        <array />
+      </option>
+      <option name="outputFromStdout" value="false" />
+      <option name="program" value="php" />
+      <option name="runOnExternalChanges" value="true" />
+      <option name="scopeName" value="resources" />
+      <option name="trackOnlyRoot" value="false" />
+      <option name="workingDir" value="$ProjectFileDir$/ModernFactions" />
+      <envs />
+    </TaskOptions>
+    <TaskOptions isEnabled="true">
+      <option name="arguments" value="../libs/libkinetic.phar def resources/kinetic.xml src SOFe\ModernFactions\Generated\KineticIds eol LF" />
+      <option name="checkSyntaxErrors" value="true" />
+      <option name="description" />
+      <option name="exitCodeBehavior" value="ERROR" />
+      <option name="fileExtension" value="xml" />
+      <option name="immediateSync" value="true" />
+      <option name="name" value="libkinetic def" />
+      <option name="output" value="$ProjectFileDir$/ModernFactions/src/SOFe/ModernFactions/Generated" />
+      <option name="outputFilters">
+        <array />
+      </option>
+      <option name="outputFromStdout" value="false" />
+      <option name="program" value="php" />
+      <option name="runOnExternalChanges" value="true" />
+      <option name="scopeName" value="resources" />
+      <option name="trackOnlyRoot" value="false" />
+      <option name="workingDir" value="$ProjectFileDir$/ModernFactions" />
+      <envs />
+    </TaskOptions>
+    <TaskOptions isEnabled="true">
+      <option name="arguments" value="../libs/libkinetic.phar x2j resources/kinetic.xml resources/kinetic.json" />
+      <option name="checkSyntaxErrors" value="true" />
+      <option name="description" />
+      <option name="exitCodeBehavior" value="ERROR" />
+      <option name="fileExtension" value="xml" />
+      <option name="immediateSync" value="true" />
+      <option name="name" value="libkinetic x2j" />
+      <option name="output" value="$ProjectFileDir$/ModernFactions/resources" />
+      <option name="outputFilters">
+        <array />
+      </option>
+      <option name="outputFromStdout" value="false" />
+      <option name="program" value="php" />
+      <option name="runOnExternalChanges" value="true" />
+      <option name="scopeName" value="resources" />
+      <option name="trackOnlyRoot" value="false" />
+      <option name="workingDir" value="$ProjectFileDir$/ModernFactions" />
+      <envs />
+    </TaskOptions>
+  </component>
+</project>

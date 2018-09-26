@@ -3,3 +3,13 @@ author= SOFe
 version 1.0.0
 
 module ModernFactions
+
+menu
+  title= ModernFactions
+  synopsis= Main menu of ModernFactions
+
+list
+  option= Faction List
+  menu
+    title= Faction List
+    synopsis= \0

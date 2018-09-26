@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="resources" pattern="file[ModernFactions]:ModernFactions/resources//*" />
+</component>

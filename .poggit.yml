@@ -7,7 +7,7 @@ projects:
       - src: Sandertv/Marshal/Marshal
         version: ^1.0.0
       - src: poggit/libasynql/libasynql
-        version: ^3.2.0
+        version: ^3.1.1
       - src: SOF3/libglocal/libglocal
         version: ^0.4.0
       - src: SOF3/libkinetic/libkinetic

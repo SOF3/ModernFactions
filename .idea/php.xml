@@ -3,9 +3,9 @@
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/../../libs/PocketMine-MP" />
-      <path value="$PROJECT_DIR$/../../libs/libkinetic" />
-      <path value="$PROJECT_DIR$/../../libs/libasynql_v3" />
-      <path value="$PROJECT_DIR$/../../libs/libglocal" />
+      <path value="libs/libkinetic.phar" />
+      <path value="libs/libasynql.phar" />
+      <path value="libs/libglocal.phar" />
       <path value="$PROJECT_DIR$/../../libs/spoondetector" />
       <path value="$PROJECT_DIR$/../../libs/Marshal" />
     </include_path>
