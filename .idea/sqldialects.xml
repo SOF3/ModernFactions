@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/ModernFactions/resources/db/mysql.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/ModernFactions/resources/db/sqlite.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/ModernFactions/resources/claim/mysql.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ModernFactions/resources/core/mysql.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ModernFactions/resources/core/sqlite.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/ModernFactions/resources/diplomacy/mysql.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ModernFactions/resources/home/mysql.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ModernFactions/resources/invite/mysql.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ModernFactions/resources/power/mysql.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ModernFactions/resources/rank/mysql.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/ModernFactions/resources/social/mysql.sql" dialect="MySQL" />
   </component>
 </project>

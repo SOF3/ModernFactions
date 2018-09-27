@@ -1,0 +1,37 @@
+## Feature outline
+This file outlines the features to be implemented in ModernFactions
+
+- core
+  - list
+  - create, disband
+  - join, quit
+  - motto
+- social
+  - friendly fire
+  - internal chat
+- power
+  - from kills
+  - from building, breaking blocks, etc.
+  - can be bought with money
+- invite
+  - invite
+  - join request
+- claim
+  - land protection
+  - over-claiming another faction's chunk given enough power
+- home
+  - tp to home
+  - may spend power to tp
+  - may spend power to create home
+  - may spend power to move home
+  - must be in claimed land
+- rank
+  - default ranks from config
+  - per-faction customization
+  - permission control
+    - level-based promotion/demotion/kick/perm management
+    - per-rank permission configuration
+- diplomacy
+  - Diplomacy is established in the form of "protocols".
+  - Two faction diplomats negotiate on a protocol that assigns a rank to all members of the other faction
+  - Either party can terminate a protocol, which would revoke the ranks from both parties. 
