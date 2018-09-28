@@ -1,0 +1,33 @@
+base lang en_US = English (US)
+author= SOFe
+version 1.0.0
+
+module ModernFactions
+
+faction
+  open
+    open= Anyone can join
+    request= Players can request to be invited
+    closed= Only invited players can join
+
+form
+  title= ModernFactions
+  synopsis= Main menu of ModernFactions. You can open this menu with %{hl1 /f}.
+
+list
+  option= List Factions
+  form
+    title= Faction List
+    synopsis= You can open this list with %{hl1 /f list}
+
+create
+  option= Create faction
+  form
+    title= Create a faction
+    synopsis= You can open this list with %{hl1 /f create}
+    name
+      text= Faction name
+    open
+      text= Type
+    join-fee
+      text= Membership fee

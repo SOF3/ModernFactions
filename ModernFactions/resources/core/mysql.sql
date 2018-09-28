@@ -12,6 +12,7 @@ CREATE TABLE IF NOT EXISTS MF_Faction (
     factionId INT                           NOT NULL PRIMARY KEY AUTO_INCREMENT,
     name      VARCHAR(100)  CHARSET utf8mb4 NOT NULL UNIQUE,
     motto     VARCHAR(1000) CHARSET utf8mb4 NOT NULL             DEFAULT '',
+    balance   INT                           NOT NULL,
     created   TIMESTAMP                     NOT NULL             DEFAULT CURRENT_TIMESTAMP
 );
 -- #        }

@@ -3,12 +3,16 @@ This file outlines the features to be implemented in ModernFactions
 
 - core
   - list
-  - create, disband
-  - join, quit
+  - create
+    - might involve a cost
+  - disband
+  - join
+  - quit
   - motto
 - social
   - friendly fire
   - internal chat
+  - internal announcements
 - power
   - from kills
   - from building, breaking blocks, etc.

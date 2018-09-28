@@ -4,7 +4,7 @@
 -- #        { Rank
 CREATE TABLE IF NOT EXISTS MF_Rank (
     rankId           INT                          NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    factionId        INT                          NOT NULL KEY,
+    factionId        INT                          NOT NULL,
     name             VARCHAR(100) CHARSET utf8mb4 NOT NULL,
     level            INT                          NOT NULL,
 
@@ -15,6 +15,8 @@ CREATE TABLE IF NOT EXISTS MF_Rank (
     permFriendlyFire BOOL                         NOT NULL,
     permInvite       BOOL                         NOT NULL,
     permMotto        BOOL                         NOT NULL,
+    permInternalChat        BOOL                         NOT NULL,
+    permAllyChat        BOOL                         NOT NULL,
 
     permPromote      INT                          NOT NULL, -- can promote up to ranks of at most this level
     permDemote       INT                          NOT NULL, -- can demote people from ranks of at most this level

@@ -12,13 +12,13 @@ namespace SOFe\ModernFactions\Generated;
 interface Queries{
 	/**
 	 * <h4>Declared in:</h4>
-	 * - resources/core/mysql.sql:17
+	 * - resources/core/mysql.sql:18
 	 */
 	public const MODERNFACTIONS_BASIC_INIT_FACTION = "ModernFactions.Basic.Init.Faction";
 
 	/**
 	 * <h4>Declared in:</h4>
-	 * - resources/core/mysql.sql:29
+	 * - resources/core/mysql.sql:30
 	 */
 	public const MODERNFACTIONS_BASIC_INIT_MEMBER = "ModernFactions.Basic.Init.Member";
 
@@ -38,7 +38,7 @@ interface Queries{
 	 * <h4>Declared in:</h4>
 	 * - resources/diplomacy/mysql.sql:30
 	 */
-	public const MODERNFACTIONS_DIPLOMACY_INIT_EDGES = "ModernFactions.Diplomacy.Init.Edges";
+	public const MODERNFACTIONS_DIPLOMACY_INIT_EDGE = "ModernFactions.Diplomacy.Init.Edge";
 
 	/**
 	 * <h4>Declared in:</h4>
@@ -54,9 +54,15 @@ interface Queries{
 
 	/**
 	 * <h4>Declared in:</h4>
-	 * - resources/invite/mysql.sql:14
+	 * - resources/invite/mysql.sql:23
 	 */
 	public const MODERNFACTIONS_INVITE_INIT_INVITE = "ModernFactions.Invite.Init.Invite";
+
+	/**
+	 * <h4>Declared in:</h4>
+	 * - resources/invite/mysql.sql:12
+	 */
+	public const MODERNFACTIONS_INVITE_INIT_OPENNESS = "ModernFactions.Invite.Init.Openness";
 
 	/**
 	 * <h4>Declared in:</h4>
@@ -66,14 +72,20 @@ interface Queries{
 
 	/**
 	 * <h4>Declared in:</h4>
-	 * - resources/rank/mysql.sql:40
+	 * - resources/rank/mysql.sql:42
 	 */
 	public const MODERNFACTIONS_RANK_INIT_MEMBERRANK = "ModernFactions.Rank.Init.MemberRank";
 
 	/**
 	 * <h4>Declared in:</h4>
-	 * - resources/rank/mysql.sql:29
+	 * - resources/rank/mysql.sql:31
 	 */
 	public const MODERNFACTIONS_RANK_INIT_RANK = "ModernFactions.Rank.Init.Rank";
+
+	/**
+	 * <h4>Declared in:</h4>
+	 * - resources/social/mysql.sql:12
+	 */
+	public const MODERNFACTIONS_SOCIAL_INIT_ANNOUNCEMENT = "ModernFactions.Social.Init.Announcement";
 
 }

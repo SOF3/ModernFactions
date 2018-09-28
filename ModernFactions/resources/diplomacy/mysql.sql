@@ -1,7 +1,7 @@
 -- #!mysql
 -- #{ ModernFactions.Diplomacy
 -- #    { Init
--- #        { Edges
+-- #        { Edge
 CREATE TABLE MF_Edge (
     min       INT       NOT NULL,
     max       INT       NOT NULL,

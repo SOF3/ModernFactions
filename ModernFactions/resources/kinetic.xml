@@ -1,12 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <kinetic xmlns="https://rawgit.com/SOF3/libkinetic/master/libkinetic.xsd" namespace="SOFe\ModernFactions">
-  <mux id="ModernFactions.menu" title="menu.title" synopsis="menu.synopsis">
+  <series>
+    <var name="command" type="string"/>
+
     <command name="config:command.main">
       <alias name="config:command.alias"/>
+
+      <overload>
+        <arg name="command"/>
+
+      </overload>
     </command>
 
-    <option commandName="list" displayName="list.option">
-      <list title="list.menu.title" synopsis="list.menu.synopsis" provider=""/>
-    </option>
-  </mux>
+    <mux id="ModernFactions.form" title="form.title" synopsis="form.synopsis" var="command">
+      <option commandName="list" displayName="list.option">
+        <series id=".list">
+          <var name="factionId" type="integer"/>
+
+          <list title="list.form.title" synopsis="list.form.synopsis" provider="Core\FactionListProvider"
+                target="factionId"/>
+        </series>
+      </option>
+
+      <option commandName="create" displayName="create.option">
+        <form id=".create" title="create.form.title" var="create">
+          <label id="lbl" text="create.form.synopsis"/>
+          <input id="name" text="create.form.name.text"/>
+          <select id="open" text="create.form.open.text" mode="slider">
+            <option commandName="open" displayName="faction.open.open" value="open"/>
+            <option commandName="invite-only" displayName="faction.open.request" value="request" default="true"/>
+            <option commandName="closed" displayName="faction.open.closed" value="closed"/>
+          </select>
+          <input id="join-fee" text="create.form.join-fee.text" default="0"/>
+
+          <onComplete>
+            <controller class="Core\CreateFactionController"/>
+          </onComplete>
+        </form>
+      </option>
+    </mux>
+  </series>
+
+  <wizard id="ModernFactions.core.display-faction">
+    <param name="factionId" type="integer"/>
+
+    <series>
+      <var name="faction" type="object">
+        <field name="name" type="string"/>
+        <field name="members" type="integer"/>
+        <field name="open" type="string"/>
+      </var>
+
+      <onStart>
+        <controller class="Core\LoadFactionDataController"/>
+      </onStart>
+
+      <mux title="core.info.title" synopsis="core.info.synopsis">
+        <option commandName="members" displayName="core.info.members">
+          <recurForm id=".members" title="core.info.members.title" provider="FactionMemberListProvider">
+            <each>
+              <label id="name" text="core.info.members.each.name"/>
+            </each>
+          </recurForm>
+        </option>
+
+        <option commandName="join" displayName="core.info.join">
+          <!-- TODO refactor to a <call> -->
+          <exit id=".join">
+            <onStart>
+              <controller class="JoinFactionController"/>
+            </onStart>
+          </exit>
+        </option>
+      </mux>
+    </series>
+  </wizard>
 </kinetic>
